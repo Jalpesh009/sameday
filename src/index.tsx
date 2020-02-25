@@ -1,6 +1,7 @@
 import { ConfigProvider, message } from 'antd';
 import 'antd/dist/antd.css';
 import zhCN from 'antd/lib/locale/zh_CN';
+import 'bootstrap/scss/bootstrap.scss';
 import { StoreProvider } from 'easy-peasy';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
@@ -10,9 +11,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { router } from './constants/router';
 import { store } from './constants/store';
 import RouterLayout from './layouts/RouterLayout';
-import './style/global.css';
+import './style/global.scss';
 import request from './utils/request';
-
 moment.locale('zh-cn');
 request.interceptors.response = async function(response) {
   const res: ResponseBody<any> = await response.json();
