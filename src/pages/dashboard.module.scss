@@ -7,6 +7,10 @@ input[type='checkbox'] {
   height: 25px;
 }
 
+.ant-layout {
+  background: white;
+}
+
 .dashboard-head {
   h2 {
     display: flex;
@@ -212,6 +216,7 @@ a.awaiting-production {
 
 .w-4 {
   width: 20%;
+  padding-right: 15px;
 }
 
 .w-5 {
@@ -299,8 +304,10 @@ p.pickup {
 
 .pick-order {
   position: absolute;
-  right: 20px;
+  right: 0;
   bottom: -6px;
+  left: 62px;
+  width: 2px;
   color: #1e8406;
   font-weight: bold;
   font-size: 11px;
@@ -321,7 +328,19 @@ p.pickup {
   display: block;
   width: 83px;
   height: 83px;
-  margin-left: -21px;
+  margin-left: -26px;
+  background-image: url(../assets/images/true.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  content: '';
+}
+
+.paid-in::before {
+  position: absolute;
+  display: block;
+  width: 83px;
+  height: 83px;
+  margin-left: -26px;
   background-image: url(../assets/images/true.png);
   background-repeat: no-repeat;
   background-size: 22px;
@@ -347,11 +366,16 @@ p.pickup {
   width: 20%;
 }
 .product-detail-table-second .custom-width {
-  width: 14%;
+  width: 20%;
+}
+
+.custom-width-detail {
+  width: 25%;
 }
 
 .dtg-print {
-  margin-left: 20px;
+  color: #ff0014;
+  font-weight: 700 !important;
 }
 
 .Product-detail {
@@ -425,32 +449,14 @@ p.color-blue {
   color: white;
   background: #007bff;
 }
-.art-work ul li {
-  display: inline-block;
-}
-.related-images li {
-  width: 25%;
-  text-align: center;
-}
+
 .related-images p {
-  margin-top: 20px;
   font-weight: 700;
   font-size: 19px;
 }
 
-.f-right {
-  float: right;
-  margin-top: 6px;
-  margin-right: 20px;
-}
-
 .bg-color {
   background-color: #eee;
-}
-
-li.prod {
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 .dwnld {
@@ -459,13 +465,61 @@ li.prod {
   border-color: #007bff;
 }
 
-.related-images img {
-  width: 60%;
-}
-ul.related-images {
-  background: white;
+.paid-in {
+  color: #26880f;
+  font-weight: 100 !important;
 }
 
+.color-black {
+  color: black;
+}
+
+.order-id {
+  a {
+    font-weight: 500;
+  }
+  p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.production-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  p {
+    color: #007bff;
+    font-size: 20px;
+  }
+  .running {
+    color: #1e8406;
+    font-size: 25px;
+  }
+}
+
+.prod {
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+.download-artwork {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.row-product {
+  background: #eee;
+}
+
+.color-btn {
+  background-color: #529ded;
+}
 // 2nd Page SCSS End
 
 .ant-layout-sider {

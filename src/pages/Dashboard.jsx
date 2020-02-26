@@ -145,15 +145,17 @@ const Dashboard = props => {
                   />
 
                   <Media.Body>
-                    <p>
-                      No Minimum - More Color Available - Gildan unisex ultra
-                      cotton T- shirt (NY1)
-                    </p>
+                    <Link to={'/product-details'}>
+                      <p className="color-black">
+                        No Minimum - More Color Available - Gildan unisex ultra
+                        cotton T- shirt (NY1)
+                      </p>
+                    </Link>
                   </Media.Body>
                 </Media>
               </li>
               <li className="w-5">
-                <Button variant="primary">Royal</Button>
+                <Button className="color-btn">Royal</Button>
               </li>
               <li className="w-6">
                 <p>L X 4</p>
@@ -205,15 +207,17 @@ const Dashboard = props => {
                   />
 
                   <Media.Body>
-                    <p>
-                      No Minimum - More Color Available - Gildan unisex ultra
-                      cotton T- shirt (NY1)
-                    </p>
+                    <Link to={'/product-details'}>
+                      <p className="color-black">
+                        No Minimum - More Color Available - Gildan unisex ultra
+                        cotton T- shirt (NY1)
+                      </p>
+                    </Link>
                   </Media.Body>
                 </Media>
               </li>
               <li className="w-5">
-                <Button variant="primary">Royal</Button>
+                <Button className="color-btn">Royal</Button>
               </li>
               <li className="w-6">
                 <p>L X 4</p>

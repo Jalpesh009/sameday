@@ -1,0 +1,158 @@
+.home-header_wrap__zpEJ1 .home-header_pop_trigger__35bA2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-header_wrap__zpEJ1 .home-header_user_name__31bXo {
+  display: inline-block;
+  width: 100%;
+  margin-left: 0;
+  overflow: hidden;
+  color: #000;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
+
+.ant-layout-header {
+  line-height: 1;
+}
+
+.ant-avatar {
+  width: 42px;
+  height: 42px;
+  border: 1px solid;
+  border-color: #196bd8 !important;
+}
+
+a.header-msg::before {
+  position: absolute;
+  top: -2px;
+  left: -16px;
+  width: 15px;
+  height: 15px;
+  padding-left: 4px;
+  color: #fff;
+  font-size: 13px;
+  background: #007bff;
+  border-radius: 50px;
+  content: '1';
+}
+
+a.header-notification::before {
+  position: absolute;
+  top: -2px;
+  left: -19px;
+  width: 15px;
+  height: 15px;
+  padding-left: 4px;
+  color: #fff;
+  font-size: 13px;
+  background: #007bff;
+  border-radius: 50px;
+  content: '1';
+}
+
+.market-place::before {
+  position: absolute;
+  top: -2px;
+  left: -14px;
+  width: 15px;
+  height: 15px;
+  padding-left: 4px;
+  color: #fff;
+  font-size: 13px;
+  background: #007bff;
+  border-radius: 50px;
+  content: '1';
+}
+
+img.header-icon-mail {
+  width: 25px;
+}
+
+img.header-icon-notification {
+  width: 37px;
+}
+
+img.header-icon-market {
+  width: 13%;
+}
+.modified-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  ul li {
+    margin: 0 20px;
+  }
+  a {
+    position: relative;
+    color: #707070;
+    font-weight: 500;
+    font-size: 17px;
+  }
+}
+
+.modified-logo img {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 10%;
+  margin-top: 10px;
+}
+
+i.anticon.anticon-caret-down {
+  position: absolute;
+  top: 4px;
+  left: 111px;
+}
+.home-header_wrap__zpEJ1 {
+  padding-right: 80px;
+}
+
+.b-right::after {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: #eeeeeebf;
+  content: '';
+}
+
+.b-left::before {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: #eeeeeebf;
+  content: '';
+}
+// slide menu css
+
+img.side-menu-img {
+  width: 30px;
+  height: auto;
+  margin-right: 30px;
+}
+
+ul.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-inline span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-item {
+  height: 50px;
+}
+
+ul.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-inline li:hover {
+  background: #1890ff;
+}
+
+// slide menu css end

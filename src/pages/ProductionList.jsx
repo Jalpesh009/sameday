@@ -13,7 +13,7 @@ const ProductionList = props => {
           <div className="col-lg-3 ml-5 dashboard-head">
             <ul className="p-0">
               <li>
-                <Link className="back-page" to={'/'}>
+                <Link className="back-page" to={'/dashboard'}>
                   Back
                 </Link>
               </li>
@@ -24,6 +24,18 @@ const ProductionList = props => {
           </div>
         </div>
         <div className="row mt-5 p-4">
+          <div className="col-lg-6 order-id">
+            <p>Order: #ADJ2322434D</p>
+            <Link to={'/'}>{`Account Setup > Delivery Method`}</Link>
+          </div>
+          <div className="col-lg-6 production-status">
+            <p>
+              Production Status
+              <strong className="running">Running 2 of 4</strong>
+            </p>
+          </div>
+        </div>
+        <div className="row p-4">
           <div className="col-lg-12 product-details">
             <ul className="product-detail-row">
               <li className="custom-width">
@@ -143,50 +155,48 @@ const ProductionList = props => {
             </ul>
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-12 download-artwork">
-            <div className="art-work">
-              <ul className="p-0  bg-color">
-                <li className="prod">
-                  <p>Product</p>
-                </li>
-                <li className="f-right">
-                  <Button className="dwnld" variant="secondary">
-                    Download Artwork
-                  </Button>
-                </li>
-              </ul>
-              <ul className="related-images p-0">
-                <li>
-                  <img
-                    alt="headerbg"
-                    src={require('../assets/images/related.png')}
-                  />
-                  <p>Front</p>
-                </li>
-                <li>
-                  <img
-                    alt="headerbg"
-                    src={require('../assets/images/related.png')}
-                  />
-                  <p>Back</p>
-                </li>
-                <li>
-                  <img
-                    alt="headerbg"
-                    src={require('../assets/images/related.png')}
-                  />
-                  <p>Side</p>
-                </li>
-                <li>
-                  <img
-                    alt="headerbg"
-                    src={require('../assets/images/related.png')}
-                  />
-                  <p>Side</p>
-                </li>
-              </ul>
-            </div>
+        <div className="row m-0 p-3 row-product">
+          <div className="col-lg-6 prod">
+            <p>Product</p>
+          </div>
+          <div className="col-lg-6 download-artwork">
+            <Button className="dwnld" variant="secondary">
+              Download Artwork
+            </Button>
+          </div>
+        </div>
+        <div className="row mt-5 related-images">
+          <div className="col-lg-2">
+            <img
+              className="w-100"
+              alt="headerbg"
+              src={require('../assets/images/related.png')}
+            />
+            <p className="text-center my-3">Front</p>
+          </div>
+          <div className="col-lg-2">
+            <img
+              className="w-100"
+              alt="headerbg"
+              src={require('../assets/images/related.png')}
+            />
+            <p className="text-center  my-3">Front</p>
+          </div>{' '}
+          <div className="col-lg-2">
+            <img
+              className="w-100"
+              alt="headerbg"
+              src={require('../assets/images/related.png')}
+            />
+            <p className="text-center  my-3">Front</p>
+          </div>{' '}
+          <div className="col-lg-2">
+            <img
+              className="w-100"
+              alt="headerbg"
+              src={require('../assets/images/related.png')}
+            />
+            <p className="text-center  my-3">Front</p>
           </div>
         </div>
         <div className="row">
@@ -202,7 +212,7 @@ const ProductionList = props => {
                 <p>Item#</p>
               </li>
 
-              <li className="custom-width">
+              <li className="custom-width-detail">
                 <p>Details</p>
               </li>
 
@@ -232,7 +242,7 @@ const ProductionList = props => {
                 <p>#232jojdsdkn2</p>
               </li>
 
-              <li className="custom-width">
+              <li className="custom-width-detail">
                 <Media>
                   <img
                     alt="headerbg"
@@ -240,10 +250,12 @@ const ProductionList = props => {
                   />
 
                   <Media.Body>
-                    <p>
-                      No Minimum - More Color Available - Gildan unisex ultra
-                      cotton T- shirt (NY1)
-                    </p>
+                    <Link to={'/product'}>
+                      <p className="color-black">
+                        No Minimum - More Color Available - Gildan unisex ultra
+                        cotton T- shirt (NY1)
+                      </p>
+                    </Link>
                   </Media.Body>
                 </Media>
               </li>
@@ -251,14 +263,14 @@ const ProductionList = props => {
                 <p className="dtg-print">DTG Print</p>
               </li>
               <li className="custom-width">
-                <Button variant="primary">Royal</Button>
+                <Button className="color-btn">Royal</Button>
               </li>
               <li className="custom-width">
                 <p>L X 4</p>
               </li>
 
-              <li className="w-7">
-                <p className="color-blue detail-page-rush">Paid in Full</p>
+              <li className="custom-width">
+                <p className="paid-in">Paid in Full</p>
               </li>
             </ul>
           </div>

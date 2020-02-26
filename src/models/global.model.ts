@@ -18,7 +18,7 @@ export const globalModel: GlobalModel = {
     state.collapseMenu = payload;
   }),
   userInfo: {
-    name: 'Scott Anderson',
+    name: 'Me',
     role: Roles.Guest,
   },
   setUserInfo: action((state, payload) => {

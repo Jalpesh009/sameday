@@ -22,6 +22,12 @@ function renderMenu(router: RouteNode[]) {
           title={
             <span>
               {m.icon && <Icon type={m.icon} />}
+              {m.img && (
+                <img
+                  className="side-menu-img"
+                  src={require(`../assets/images/${m.img}`)}
+                />
+              )}
               <span>{m.name}</span>
             </span>
           }
@@ -34,6 +40,12 @@ function renderMenu(router: RouteNode[]) {
     return (
       <MenuItem key={m.path}>
         {m.icon && <Icon type={m.icon} />}
+        {m.img && (
+          <img
+            className="side-menu-img"
+            src={require(`../assets/images/${m.img}`)}
+          />
+        )}
         <span>{m.name}</span>
       </MenuItem>
     );
@@ -83,7 +95,7 @@ export default function BasicLayout({
     <Layout>
       <Sider width={256} collapsed={collapseMenu}>
         <div className={styles.logo}>
-          <Link to="/">{window.config.systemName}</Link>
+          <Link to="/" />
         </div>
         {pathname !== '/' && (
           <Menu
