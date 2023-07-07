@@ -33,7 +33,7 @@
     "react-scripts": "3.4.0",
     "react-use": "^13.26.1",
     "redux-logger": "^3.0.6",
-    "stylelint": "^11.0.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-css-modules": "^1.5.0",
     "stylelint-config-prettier": "^6.0.0",
     "stylelint-config-rational-order": "^0.1.2",
